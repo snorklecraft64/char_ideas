@@ -1,21 +1,21 @@
 name: Load Characters
 on: [push]
-permissions:
-  actions: write
-  attestations: write
-  checks: write
-  contents: write
-  deployments: write
-  discussions: write
-  id-token: write
-  issues: write
-  pull-requests: write
-  repository-projects: write
-  security-events: write
-  statuses: write
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      attestations: write
+      checks: write
+      contents: write
+      deployments: write
+      discussions: write
+      id-token: write
+      issues: write
+      pull-requests: write
+      repository-projects: write
+      security-events: write
+      statuses: write
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
