@@ -1,10 +1,10 @@
 name: Load Characters
 on: [push]
+permissions:
+  contents: write
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
