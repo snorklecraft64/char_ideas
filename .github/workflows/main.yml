@@ -1,4 +1,4 @@
-name: Load Characters
+name: Generate Feed
 on: [push]
 jobs:
   build:
